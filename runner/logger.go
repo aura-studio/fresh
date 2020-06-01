@@ -38,7 +38,9 @@ type appLogWriter struct{}
 func (a appLogWriter) Write(p []byte) (n int, err error) {
 	ss := strings.Split(string(p), "\n")
 	for _, s := range ss {
-		appLog(s)
+		if len(s) > 0 {
+			appLog(s)
+		}
 	}
 
 	return len(p), nil
