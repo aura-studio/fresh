@@ -1,4 +1,4 @@
-module github.com/aura-studio/fresh
+module fresh
 
 go 1.14
 

@@ -18,9 +18,9 @@ const (
 )
 
 var settings = map[string]string{
-	"config_path":       ".config/runner.conf",
+	"config_path":       "./runner.conf",
 	"root":              ".",
-	"build_root":		 "./server/",
+	"build_root":        ".",
 	"tmp_path":          "./tmp",
 	"build_name":        "runner-build",
 	"build_log":         "runner-build-errors.log",
