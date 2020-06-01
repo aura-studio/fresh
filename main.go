@@ -15,8 +15,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/pilu/fresh/runner"
 	"os"
+
+	"fresh/runner"
 )
 
 func main() {
@@ -31,6 +32,5 @@ func main() {
 			os.Setenv("RUNNER_CONFIG_PATH", *configPath)
 		}
 	}
-
 	runner.Start()
 }
