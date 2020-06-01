@@ -3,6 +3,7 @@ package runner
 import (
 	"fmt"
 	logPkg "log"
+	"strings"
 	"time"
 
 	"github.com/mattn/go-colorable"
@@ -35,7 +36,10 @@ func fatal(err error) {
 type appLogWriter struct{}
 
 func (a appLogWriter) Write(p []byte) (n int, err error) {
-	appLog(string(p))
+	ss := strings.Split(string(p), "/n")
+	for _, s := range ss {
+		appLog(s)
+	}
 
 	return len(p), nil
 }
