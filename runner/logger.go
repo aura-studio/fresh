@@ -36,7 +36,7 @@ func fatal(err error) {
 type appLogWriter struct{}
 
 func (a appLogWriter) Write(p []byte) (n int, err error) {
-	ss := strings.Split(string(p), "/n")
+	ss := strings.Split(string(p), "\n")
 	for _, s := range ss {
 		appLog(s)
 	}
