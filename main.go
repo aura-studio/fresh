@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"os"
 
-	"fresh/runner"
+	"github.com/aura-studio/fresh/runner"
 )
 
 func main() {
