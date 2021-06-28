@@ -1,4 +1,4 @@
-module github.com/pilu/fresh
+module github.com/aura-studio/fresh
 
 go 1.14
 
